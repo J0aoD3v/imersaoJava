@@ -19,6 +19,7 @@ public class App {
         System.out.println("Digite a sua chave da API do IMDb:");
         String imbdKey = scanner.nextLine();
         String url = "https://imdb-api.com/en/API/MostPopularMovies/" + imbdKey;
+        scanner.close();
         
         //usar variável de ambiente para guardar chave api
         //linux export IMDB_API_KEY="chave" e echo $IMDB_API_KEY (Tab)
