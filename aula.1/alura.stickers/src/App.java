@@ -16,7 +16,7 @@ public class App {
         //String url = "https://raw.githubusercontent.com/alura-cursos/imersao-java-2-api/main/TopMovies.json";
         
         Scanner scanner = new Scanner(System.in);
-        System.out.println("1Digite a sua chave da API do IMDb:");
+        System.out.println("Digite a sua chave da API do IMDb:");
         String imbdKey = scanner.nextLine();
         String url = "https://imdb-api.com/en/API/MostPopularMovies/" + imbdKey;
         scanner.close();
