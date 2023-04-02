@@ -46,7 +46,7 @@ public class App {
         var parser = new JsonParser();
         List<Map<String, String>> listaDeFilmes = parser.parse(body);
         //quantidade de filmes da lista
-        System.out.println("\nQuantidade de filmes: " + listaDeFilmes.size()+"\n");
+        System.out.println("Quantidade de filmes: " + listaDeFilmes.size()+"\n");
         //metadados do primeiro da lista
         System.out.println("Metadados: \n" + listaDeFilmes.get(0)+"\n");
 
