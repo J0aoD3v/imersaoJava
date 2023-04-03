@@ -1,5 +1,7 @@
 //import java.util.Scanner;
+import java.io.InputStream;
 import java.net.URI;
+import java.net.URL;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
@@ -50,17 +52,27 @@ public class App {
         //metadados do primeiro da lista
         System.out.println("Metadados: \n" + listaDeFilmes.get(0)+"\n");
 
-        /*
+        
         //passo 3: exibir e manipular os dados
+        var geradora = new GeradoraDeFigurinhas();
         for (Map<String,String> filme : listaDeFilmes) {
-            System.out.println("\u001b[1mTitulo: " + filme.get("title"));
-            System.out.println("\u001b[1mPoster: " + filme.get("image"));
-            System.out.println("\u001b[1mClassificação: " + filme.get("imDbRating"));
+
+            String urlImagem = filme.get("image");
+            String titulo = filme.get("title");
+            
+            
+            InputStream inputStream = new URL(urlImagem).openStream();
+            String nomeArquivo = titulo + ".png";
+
+            geradora.cria(inputStream, nomeArquivo);
+
+            System.out.println(titulo);
             System.out.println();
         }
-        */
+        
 
         //passo 3.1: limitar quantidade de filmes mostrados + console decorado
+        /*
         for (int i = 0; i < 10; i++) {
             Map<String, String> filme = listaDeFilmes.get(i);
             System.out.println("\u001b[1mTitulo: \u001b[m" + filme.get("title"));
@@ -101,5 +113,6 @@ public class App {
             }
             System.out.println("\n");
         }
+        */
     }
 }
