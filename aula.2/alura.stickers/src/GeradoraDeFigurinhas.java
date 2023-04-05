@@ -35,12 +35,12 @@ public class GeradoraDeFigurinhas {
         Graphics2D graphics = (Graphics2D) novaImagem.getGraphics();
         graphics.drawImage(imagemOrigiral, 0, 0, null);
 
-        // Configurar a fonte
+        // Configurar a fonteestudos/
         var fonte = new Font(Font.SANS_SERIF, Font.BOLD, 128);
         graphics.setColor(Color.YELLOW);
         graphics.setFont(fonte);
 
-        // Escrever uma frasse na nova imagem
+        // Escrever uma frase na nova imagem
         String texto = "TOPZERA";
         FontMetrics fontMetrics = graphics.getFontMetrics();
         Rectangle2D retangulo = fontMetrics.getStringBounds(texto, graphics);
@@ -52,7 +52,7 @@ public class GeradoraDeFigurinhas {
         // Escrever uma imagem nova em um arquivo
         //ImageIO.write(novaImagem, "png", new File("D:/ARQUIVOS/Downloads/imersaoJava/aula.2/alura.stickers/saida/figurinha.png"));
         nomeArquivo = nomeArquivo.replace(":", " -");
-        ImageIO.write(novaImagem, "png", new File("D:/ARQUIVOS/Downloads/imersaoJava/aula.2/alura.stickers/saida/" + nomeArquivo));
+        ImageIO.write(novaImagem, "png", new File("C:/Users/temporario/OneDrive/estudos do joao UENP/imersaoJava/aula.2/alura.stickers/saida/" + nomeArquivo));
     }
 
   /*public static void main(String[] args) throws Exception {
