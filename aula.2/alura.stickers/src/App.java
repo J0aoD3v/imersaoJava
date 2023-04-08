@@ -1,4 +1,5 @@
 //import java.util.Scanner;
+import java.io.File;
 import java.io.InputStream;
 import java.net.URI;
 import java.net.URL;
@@ -52,17 +53,20 @@ public class App {
         //metadados do primeiro da lista
         System.out.println("Metadados: \n" + listaDeFilmes.get(0)+"\n");
 
-        
+        var diretorio = new File("aula.2/alura.stickers/figurinhas/");
+        diretorio.mkdir();
+
         //passo 3: exibir e manipular os dados
         var geradora = new GeradoraDeFigurinhas();
-        for (Map<String,String> filme : listaDeFilmes) {
+        //for (Map<String,String> filme : listaDeFilmes) {
+        for (int i = 0; i < 5; i++) {
+            var filme = listaDeFilmes.get(i);
 
             String urlImagem = filme.get("image");
             String titulo = filme.get("title");
-            
-            
+
             InputStream inputStream = new URL(urlImagem).openStream();
-            String nomeArquivo = titulo + ".png";
+            String nomeArquivo = diretorio.getPath() + "/" + titulo + ".png";
 
             geradora.cria(inputStream, nomeArquivo);
 
