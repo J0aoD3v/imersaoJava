@@ -47,7 +47,7 @@ public class GeradoraDeFigurinhas {
         graphics.setColor(Color.YELLOW);
         graphics.setFont(fonte);
 
-        // Escrever uma frasse na nova imagem
+        // Escrever uma frase na nova imagem
         String texto = "TOPZERA";
         FontMetrics fontMetrics = graphics.getFontMetrics();
         Rectangle2D retangulo = fontMetrics.getStringBounds(texto, graphics);
