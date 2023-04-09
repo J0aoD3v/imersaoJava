@@ -9,7 +9,7 @@ Principais itens abordados:
 - Utilização da biblioteca Gson para fazer o parsing de JSON
 - Manipulação dos dados retornados pela API para exibição na aplicação
 
-Os códigos estão disponíveis na pasta aula1/.
+Os códigos estão disponíveis na pasta aula1/
 
 ## AULA 2 - Gerando figurinhas para WhatsApp
 Na segunda aula, aprendemos a gerar figurinhas para WhatsApp utilizando a linguagem Java. Para isso, foi utilizado a biblioteca imagemagick para manipular imagens e a biblioteca whatsapp-sticker-utils para criar as figurinhas.
@@ -19,7 +19,7 @@ Principais itens abordados:
 - Criação de figurinhas para WhatsApp utilizando a biblioteca whatsapp-sticker-utils
 - Manipulação dos dados de entrada e saída da aplicação
 
-Os códigos estão disponíveis na pasta aula2/.
+Os códigos estão disponíveis na pasta aula2/
 
 ## AULA 3 - Ligando as pontas, refatoração e orientação a objetos
 Nesta aula, aprendemos a utilizar os conceitos de orientação a objetos para refatorar o código das aulas anteriores. Também aprendemos a utilizar padrões de projeto para tornar o código mais limpo e organizado.
@@ -30,7 +30,7 @@ Principais itens abordados:
 - Utilização de padrões de projeto como Singleton e Factory Method
 - Criação de classes e métodos para representar entidades do mundo real
 
-Os códigos estão disponíveis na pasta aula3/.
+Os códigos estão disponíveis na pasta aula3/
 
 ## AULA 4 - Criando uma API RESTful com Spring Boot
 Na aula 4, aprendemos a criar uma API RESTful utilizando o framework Spring Boot. Utilizamos o gerenciador de dependências Maven para gerenciar as dependências do projeto e facilitar a compilação.
@@ -42,7 +42,7 @@ Criação de um projeto Spring Boot utilizando o Spring Initializr;
 - Implementação de endpoints RESTful utilizando o Spring MVC;
 - Utilização do Postman para testar as requisições e respostas da API.
 
-Os códigos utilizados durante a aula estão disponíveis na pasta aula4/.
+Os códigos utilizados durante a aula estão disponíveis na pasta aula4/
 
 ## Aula 5 - Publicando nossa API na nuvem usando o Fly.io
 Na quinta e última aula, aprendemos a publicar nossa API na nuvem utilizando o serviço de hospedagem Fly.io, uma plataforma como serviço (PaaS). Utilizamos o Docker Hub como repositório central de imagens que podem ser usadas para executar containers de diferentes tecnologias e ferramentas.
@@ -55,7 +55,7 @@ Principais tópicos abordados:
 - Deploy da API na plataforma Fly.io
 - É importante lembrar que o Fly.io requer um cartão de crédito para o cadastro, por isso é fundamental entender a precificação e as quotas gratuitas oferecidas pela plataforma.
 
-Os códigos utilizados na aula podem ser encontrados na pasta aula5/.
+Os códigos utilizados na aula podem ser encontrados na pasta aula5/
 
 ## Principais Ferramentas Utilizadas
 - Visual Studio Code - Editor de código utilizado durante o desenvolvimento do projeto.
