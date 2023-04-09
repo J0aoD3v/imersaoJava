@@ -1,5 +1,5 @@
 # Imersão Java 2023 (Alura) - Descrição Geral
-Este repositório contém o código-fonte de um curso de Java com 5 aulas, que cobrem desde o consumo de APIs até a publicação de APIs na nuvem. Cada aula possui seu próprio diretório, com seus respectivos códigos e arquivos.
+Este repositório contém o meu código-fonte de um curso de Java com 5 aulas, que cobrem desde o consumo de APIs até a publicação de APIs na nuvem. Cada aula possui seu próprio diretório, com seus respectivos códigos e arquivos.
 
 ## AULA 1 - Consumindo uma API de filmes com Java
 Nesta aula, aprendemos a consumir uma API de filmes com Java e manipular os dados retornados. Foi utilizado o protocolo HTTP para fazer as requisições e a biblioteca Gson para fazer o parsing do JSON retornado pela API.
@@ -32,26 +32,34 @@ Principais itens abordados:
 
 Os códigos estão disponíveis na pasta aula3/.
 
-AULA 4 - Criando nossa própria API com Spring
-Na quarta aula, aprendemos a criar uma API RESTful com o framework Spring. Aprendemos a criar rotas, definir modelos de dados e implementar as operações CRUD (Create, Read, Update e Delete).
+## AULA 4 - Criando uma API RESTful com Spring Boot
+Na aula 4, aprendemos a criar uma API RESTful utilizando o framework Spring Boot. Utilizamos o gerenciador de dependências Maven para gerenciar as dependências do projeto e facilitar a compilação.
 
-Principais itens abordados:
-- Introdução ao framework Spring
-- Criação de endpoints RESTful para a API
-- Definição de modelos de dados com JPA e Hibernate
-- Implementação de operações CRUD com Spring Data JPA
-- Utilização de anotações do Spring para injetar dependências
+Principais tópicos abordados:
+- Introdução ao Spring Boot e sua arquitetura;
+Criação de um projeto Spring Boot utilizando o Spring Initializr;
+- Definição de modelos de dados e a criação de repositórios utilizando o Spring Data JPA;
+- Implementação de endpoints RESTful utilizando o Spring MVC;
+- Utilização do Postman para testar as requisições e respostas da API.
 
-Os códigos estão disponíveis na pasta aula4/.
+Os códigos utilizados durante a aula estão disponíveis na pasta aula4/.
 
-AULA 5 - Publicando nossa API no Cloud
-Por fim, na quinta aula, aprendemos a publicar nossa API na nuvem utilizando o serviço de hospedagem Heroku. Também aprendemos a utilizar o serviço de banco de dados PostgreSQL para persistir os dados da nossa aplicação.
+## Aula 5 - Publicando nossa API na nuvem usando o Fly.io
+Na quinta e última aula, aprendemos a publicar nossa API na nuvem utilizando o serviço de hospedagem Fly.io, uma plataforma como serviço (PaaS). Utilizamos o Docker Hub como repositório central de imagens que podem ser usadas para executar containers de diferentes tecnologias e ferramentas.
 
-Principais itens abordados:
-- Introdução ao serviço de hospedagem Heroku
-- Criação de um banco de dados PostgreSQL na nuvem
-- Configuração do ambiente de produção para a API
-- Implantação da API no Heroku
-- Utilização de variáveis de ambiente para configurar a aplicação na nuvem
+Principais tópicos abordados:
+- Introdução ao Fly.io, o PaaS utilizado na Imersão Java
+- Criação de uma conta no Fly.io e configuração do ambiente de desenvolvimento
+- Utilização do Docker Hub como repositório de imagens
+- Criação de um arquivo de configuração para o Fly.io
+- Deploy da API na plataforma Fly.io
+- É importante lembrar que o Fly.io requer um cartão de crédito para o cadastro, por isso é fundamental entender a precificação e as quotas gratuitas oferecidas pela plataforma.
 
-Os códigos estão disponíveis na pasta aula5/.
+Os códigos utilizados na aula podem ser encontrados na pasta aula5/.
+
+## Principais Ferramentas Utilizadas
+- Visual Studio Code - Editor de código utilizado durante o desenvolvimento do projeto.
+- Coding Pack para Java - Extensão para o Visual Studio Code que inclui uma série de ferramentas úteis para o desenvolvimento de aplicações Java, como suporte a Maven, Spring Boot e Tomcat, além de outras funcionalidades.
+- Git - Sistema de controle de versão utilizado para gerenciar o código fonte do projeto.
+- GitHub - Plataforma de hospedagem de código fonte que permite o compartilhamento e colaboração em projetos.
+- Entre outras citadas nas aulas 4 e 5.
