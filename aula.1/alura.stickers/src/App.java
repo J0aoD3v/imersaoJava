@@ -63,12 +63,17 @@ public class App {
         //passo 3.1: limitar quantidade de filmes mostrados + console decorado
         for (int i = 0; i < 5; i++) {
             Map<String, String> filme = listaDeFilmes.get(i);
-            System.out.println("\u001b[1mTitulo: \u001b[m" + filme.get("title"));
+            System.out.print("\u001b[35m" + filme.get("rank"));
+            System.out.println(". " + filme.get("fullTitle"));
+            System.out.println("\u001b[m\u001b[1mTitulo: \u001b[m" + filme.get("title"));
+            System.out.println("\u001b[1mAno: \u001b[m" + filme.get("year"));
             System.out.println("\u001b[1mPoster: \u001b[m\u001b[34m\u001b[3m" + filme.get("image"));
+            
             //mudar imDbRating para inteiro (sem decimal)
             //double classificacao = Double.parseDouble(filme.get("imDbRating"));
             //int numeroEstrelinhas = (int) classificacao;
-
+            
+            //outro método
             String imdbRatingString = filme.get("imDbRating"); // Aqui você deve pegar o valor de imdbRating da sua API
 
             double classificacao = 0.0;
@@ -99,7 +104,19 @@ public class App {
                     System.out.print("\u001b[41m🍅 " + "\u001b[m");
                 }
             }
-            System.out.println("\n");
+
+            //imdbRatingCount = NaN
+            String imdbRatingCount = filme.get("imDbRatingCount"); // Aqui você deve pegar o valor de imdbRatingCount da sua API
+
+            if (imdbRatingCount.isEmpty()) {
+                System.out.println("\n\u001b[1mQuantidade de votos: " + "\u001b[31mNaN\u001b[m");
+            } else {
+                System.out.println("\n\u001b[1mQuantidade de votos: \u001b[m" + filme.get("imDbRatingCount"));
+            }
+            
+            System.out.println("\u001b[1mElenco: \u001b[m" + filme.get("crew"));
+
+            System.out.print("\n");
         }
     }
 }

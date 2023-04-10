@@ -16,7 +16,7 @@ public class App {
 
         //passo 1: fazer uma conexão HTTP e buscar os filmes da IMDB
         //minha api
-        String url = "https://raw.githubusercontent.com/J0aoD3v/imersaoJava/main/filmes.ai/listMovieAi.json";
+        String url = "https://pastebin.com/raw/UKaRagxa";
         
         //backup das api via alura
         //String url = "https://raw.githubusercontent.com/alura-cursos/imersao-java-2-api/main/TopMovies.json";
@@ -73,50 +73,5 @@ public class App {
             System.out.println(titulo);
             System.out.println();
         }
-        
-
-        //passo 3.1: limitar quantidade de filmes mostrados + console decorado
-        /*
-        for (int i = 0; i < 10; i++) {
-            Map<String, String> filme = listaDeFilmes.get(i);
-            System.out.println("\u001b[1mTitulo: \u001b[m" + filme.get("title"));
-            System.out.println("\u001b[1mPoster: \u001b[m\u001b[34m\u001b[3m" + filme.get("image"));
-            //mudar imDbRating para inteiro (sem decimal)
-            //double classificacao = Double.parseDouble(filme.get("imDbRating"));
-            //int numeroEstrelinhas = (int) classificacao;
-
-            String imdbRatingString = filme.get("imDbRating"); // Aqui você deve pegar o valor de imdbRating da sua API
-
-            double classificacao = 0.0;
-            int numeroEstrelinhas = 0;
-
-            try {
-            classificacao = Double.parseDouble(imdbRatingString);
-            numeroEstrelinhas = (int) (classificacao); // arredondando para o inteiro mais próximo
-            } catch (NumberFormatException e) {
-            classificacao = Double.NaN;
-            }
-
-            //nota da classificação
-            if (classificacao > 7) {
-                System.out.println("\u001b[m\u001b[1mClassificação: \u001b[33m" + classificacao);
-            } else {
-                System.out.println("\u001b[m\u001b[1mClassificação: \u001b[31m" + classificacao);
-            }
-            //emoji da classificação
-            if (Double.isNaN(classificacao)) {
-                System.out.print("\u001b[41m🚫 " + "\u001b[m");
-            } else if (numeroEstrelinhas > 6) {
-                for (int n = 1; n <= numeroEstrelinhas; n++) {
-                    System.out.print("\u001b[43m⭐ " + "\u001b[m");
-                }
-            } else {
-                for (int n = 1; n <= numeroEstrelinhas; n++) {
-                    System.out.print("\u001b[41m🍅 " + "\u001b[m");
-                }
-            }
-            System.out.println("\n");
-        }
-        */
     }
 }
