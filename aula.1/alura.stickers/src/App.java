@@ -82,7 +82,7 @@ public class App {
             }
 
             //nota da classificação
-            if (classificacao > 7) {
+            if (classificacao >=7) {
                 System.out.println("\u001b[m\u001b[1mClassificação: \u001b[33m" + classificacao);
             } else {
                 System.out.println("\u001b[m\u001b[1mClassificação: \u001b[31m" + classificacao);
