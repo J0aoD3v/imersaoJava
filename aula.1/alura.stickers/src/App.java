@@ -13,7 +13,7 @@ public class App {
 
         //passo 1: fazer uma conexão HTTP e buscar os filmes da IMDB
         //minha api
-        String url = "https://pastebin.com/raw/UsdYkFQp";
+        String url = "https://pastebin.com/raw/qmn3EVbs";
         
         //backup das api via alura
         //String url = "https://raw.githubusercontent.com/alura-cursos/imersao-java-2-api/main/TopMovies.json";
