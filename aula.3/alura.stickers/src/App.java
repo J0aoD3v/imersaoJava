@@ -53,7 +53,7 @@ public class App {
         //metadados do primeiro da lista
         System.out.println("Metadados: \n" + listaDeFilmes.get(0)+"\n");
 
-        var diretorio = new File("aula.2/alura.stickers/figurinhas/");
+        var diretorio = new File("aula.3/alura.stickers/figurinhas/");
         diretorio.mkdir();
 
         //passo 3: exibir e manipular os dados
