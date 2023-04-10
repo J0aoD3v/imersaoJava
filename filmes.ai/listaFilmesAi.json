@@ -1,1 +1,60 @@
-{"items":[{"id":"tt0111161","rank":"1","title":"Film 1","fullTitle":"Film 1 (0000)","year":"0000","image":"http://example.com/","crew":"Director, Actor1, Actor2","imDbRating":"8.0","imDbRatingCount":"2611538"},{"id":"tt0068646","rank":"2","title":"Film 2","fullTitle":"Film 2 (0000)","year":"0000","image":"http://example.com/","crew":"Director, Actor1, Actor2","imDbRating":"7.5","imDbRatingCount":"1807168"},{"id":"tt0468569","rank":"3","title":"Film 3","fullTitle":"Film 3 (0000)","year":"0000","image":"http://example.com/","crew":"Director, Actor1, Actor2","imDbRating":"6.0","imDbRatingCount":"2583633"},{"id":"tt0071562","rank":"4","title":"Film 4","fullTitle":"Film 4 (0000)","year":"0000","image":"http://example.com/","crew":"Director, Actor1, Actor2","imDbRating":"7.0","imDbRatingCount":"1242972"},{"id": "tt0050083", "rank": "5", "title": "Film 5", "fullTitle": "Film 5 (0000)", "year": "0000","image":"http://example.com/","crew":"Director, Actor1, Actor2","imDbRating":"4.3","imDbRatingCount":"771737"}],"errorMessage":""}
+{
+    "items": [
+      {
+        "id": "tt3924023",
+        "rank": "1",
+        "title": "Escape from the Dungeon",
+        "fullTitle": "Escape from the Dungeon (2010)",
+        "year": "2010",
+        "image": "https://raw.githubusercontent.com/J0aoD3v/imersaoJava/main/filmes.ai/movie1.jpeg",
+        "crew": "Director, Actor1, Actor2",
+        "imDbRating": "8.0",
+        "imDbRatingCount": "936175"
+      },
+      {
+        "id": "tt7453291",
+        "rank": "2",
+        "title": "The Lost City of Zephyr",
+        "fullTitle": "The Lost City of Zephyr (2015)",
+        "year": "2015",
+        "image": "https://raw.githubusercontent.com/J0aoD3v/imersaoJava/main/filmes.ai/movie2.jpeg",
+        "crew": "Director, Actor1, Actor2",
+        "imDbRating": "7.5",
+        "imDbRatingCount": "759722"
+      },
+      {
+        "id": "tt3692837",
+        "rank": "3",
+        "title": "Operation: Dino Rescue",
+        "fullTitle": "Operation: Dino Rescue (2008)",
+        "year": "2008",
+        "image": "https://raw.githubusercontent.com/J0aoD3v/imersaoJava/main/filmes.ai/movie3.jpeg",
+        "crew": "Director, Actor1, Actor2",
+        "imDbRating": "6.0",
+        "imDbRatingCount": "1234979"
+      },
+      {
+        "id": "tt1564097",
+        "rank": "4",
+        "title": "The Great Robot Race",
+        "fullTitle": "The Great Robot Race (2013)",
+        "year": "2013",
+        "image": "https://raw.githubusercontent.com/J0aoD3v/imersaoJava/main/filmes.ai/movie4.jpeg",
+        "crew": "Director, Actor1, Actor2",
+        "imDbRating": "7.0",
+        "imDbRatingCount": "245678"
+      },
+      {
+        "id": "tt2469790",
+        "rank": "5",
+        "title": "Mystery of the Missing Mascot",
+        "fullTitle": "Mystery of the Missing Mascot (2005)",
+        "year": "2005",
+        "image": "https://raw.githubusercontent.com/J0aoD3v/imersaoJava/main/filmes.ai/movie5.jpeg",
+        "crew": "Director, Actor1, Actor2",
+        "imDbRating": "4.3",
+        "imDbRatingCount": "841642"
+      }
+    ],
+    "errorMessage": ""
+  }
