@@ -43,15 +43,12 @@ public class App {
         var request = HttpRequest.newBuilder(endereco).GET().build();
         HttpResponse<String> response = client.send(request, BodyHandlers.ofString());
         String body = response.body();
-        //System.out.println(body);
 
         //passo 2: extrair só os dados que interesssam (titulo, poster, classificação)
         var parser = new JsonParser();
         List<Map<String, String>> listaDeFilmes = parser.parse(body);
         //quantidade de filmes da lista
         System.out.println("Quantidade de filmes: " + listaDeFilmes.size()+"\n");
-        //metadados do primeiro da lista
-        System.out.println("Metadados: \n" + listaDeFilmes.get(0)+"\n");
 
         var diretorio = new File("aula.2/alura.stickers/figurinhas/");
         diretorio.mkdir();
