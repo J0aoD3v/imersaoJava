@@ -61,7 +61,7 @@ public class App {
         */
 
         //passo 3.1: limitar quantidade de filmes mostrados + console decorado
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < 5; i++) {
             Map<String, String> filme = listaDeFilmes.get(i);
             System.out.println("\u001b[1mTitulo: \u001b[m" + filme.get("title"));
             System.out.println("\u001b[1mPoster: \u001b[m\u001b[34m\u001b[3m" + filme.get("image"));
