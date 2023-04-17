@@ -19,7 +19,7 @@ import javax.imageio.ImageIO;
 public class GeradoraDeFigurinhas {
     
 
-    public void cria(InputStream inputStream, String nomeArquivo) throws Exception {
+    public void cria(InputStream inputStream, String nomeArquivo, String texto) throws Exception {
 
         // Leitura da imagem
         // InputStream inputStream = 
@@ -42,12 +42,12 @@ public class GeradoraDeFigurinhas {
 
         // Configurar a fonte
         //var fonte = new Font(Font.SANS_SERIF, Font.BOLD, 128);
-        var fonte = new Font("IMPACT", Font.BOLD, 128);
+        var fonte = new Font("IMPACT", Font.BOLD, 64);
         graphics.setColor(Color.YELLOW);
         graphics.setFont(fonte);
 
         // Escrever uma frase na nova imagem
-        String texto = "TOPZERA";
+        //String texto = "TOPZERA";
         FontMetrics fontMetrics = graphics.getFontMetrics();
         Rectangle2D retangulo = fontMetrics.getStringBounds(texto, graphics);
         int larguraTexto = (int) retangulo.getWidth();

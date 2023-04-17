@@ -61,11 +61,26 @@ public class App {
 
             String urlImagem = filme.get("image");
             String titulo = filme.get("title");
+            
+            String imDbRating = filme.get("imDbRating");
+            double classificacao = 0.0;
+            if (imDbRating != null && !imDbRating.isEmpty()) {
+                classificacao = Double.parseDouble(imDbRating);
+            }
+
+            String textoFigurinha;
+            if (classificacao >= 7.0) {
+                textoFigurinha = "TOPZERA";
+            } else if (classificacao >= 5.0) {
+                textoFigurinha = "HMMMMMM...";
+            } else {
+                textoFigurinha = "Meh...";
+            }
 
             InputStream inputStream = new URL(urlImagem).openStream();
             String nomeArquivo = diretorio.getPath() + "/" + titulo + ".png";
 
-            geradora.cria(inputStream, nomeArquivo);
+            geradora.cria(inputStream, nomeArquivo, textoFigurinha);
 
             System.out.println(titulo);
             System.out.println();
